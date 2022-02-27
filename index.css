@@ -1,42 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap");
-.action {
+.wrapper#index_wrapper {
+  display: grid;
+  grid-template-rows: 3fr 3fr;
+}
+
+.main-image {
+  display: flex;
+}
+.main-image img {
+  width: 350px;
+  height: 350px;
+  margin: auto;
+}
+
+.bottomsheet {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  padding: 4rem 0 0 0;
-}
-
-.slogan {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #000;
-}
-
-.subslogan {
-  font-size: 1.2rem;
-  color: #b4b4b4;
-}
-
-#action-image {
-  width: 300px;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.bottom-wrapper {
-  height: 33%;
-}
-
-.bottom {
-  height: 100%;
-  padding: 2rem 3rem;
+  padding-top: 2rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #17233a;
 }
 
-.bottom__description {
+.slogan {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
   color: #fff;
+}
+
+.subslogan {
+  margin-top: 0.3rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #b4b4b4;
+}
+
+.action-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #1868f1;
 }
 * {
   margin: 0;
@@ -73,12 +82,17 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+}
+
 span.accent {
   color: #1868f1;
 }
 .navigation_bar {
   display: grid;
   grid-template-columns: auto 1fr auto;
+  width: 100vw;
   padding: 2rem 2rem;
 }
 
@@ -94,9 +108,7 @@ span.accent {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.8rem;
   border-radius: 1rem;
-  background: #17233a;
   transform: rotate(0deg);
   transition: 0.3s ease;
 }
