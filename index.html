@@ -11,33 +11,76 @@
     <title>FrontLand - студия web разработки</title>
 </head>
 <body class="body">
-<div class="sidebar" id="sidebar">
+<div class="sidebar">
     <p class="sidebar-title">Навигация по сайту</p>
-    <ul class="sidebar-menu" id="sidebar-menu">
-        <li class="menu-element" id="menu-element"><a href="about_page.html">Информация</a></li>
-        <li class="menu-element" id="menu-element"><a href="#">Some name</a></li>
-        <li class="menu-element" id="menu-element"><a href="#"></a>Some name</a></li>
-        <li class="menu-element" id="menu-element"><a href="#"></a>Some name</a></li>
+    <ul class="menu">
+        <a href="#"><li class="menu-element">Список курсов</li></a>
+        <a href="#"><li class="menu-element">Менторы</li></a>
+        <a href="#"><li class="menu-element">Some element</li></a>
+        <a href="#"><li class="menu-element">Some element</li></a>
     </ul>
 </div>
-<div class="navigation_bar">
-    <div class="logo">
-        <span class="accent">Web</span>Lab
+<div class="wrapper" id="main-wrapper">
+<div class="navigation-bar">
+    <div class="avatar">
+        <img src="img/icons/UI/frame-1.svg" alt="" class="svg navbar-icon">
     </div>
-    <div></div>
-    <div class="sidebar-btn" id="sidebar-btn" onclick="sidebar()">
-        <img src="img/icons/UI/menu.svg" alt="" id="sidebar-btn-icon">
+    <div class="profile-name">
+        Marcus Frog
+    </div>
+    <div class="sidebar-btn" onclick="sidebar()">
+        <img src="img/icons/UI/menu.svg" alt="" class="svg navbar-icon" id="sidebar-btn__icon">
     </div>
 </div>
-<div class="wrapper" id="index_wrapper">
-    <div class="main-image">
-        <img src="img/main-image.svg" alt="">
+
+    <div class="block">
+        <p class="title">Добро пожаловать!</p>
+        <p class="text">Рады привествовать вас на образовательной площадке WebLab. На данной платформе мызанимаемся обучением по различным IT специальностям. На нашем сайте вы сможете найти более 20 курсов различной направленности. Самое время начать!</p>
     </div>
-    <div class="bottomsheet">
-        <p class="slogan">Создадим сайт<br>твоей мечты</p>
-        <p class="subslogan">Студия WEB разработки</p>
-        <button class="action-btn">Заказать</button>
+    <div class="block">
+        <p class="title">Ваши курсы</p>
+        <div class="user-courses-section">
+            <div class="course" id="frontend-course">
+                <p class="course__title">FrontEnd разработчик</p>
+                <p class="course__step">Урок 18</p>
+            </div>
+            <div class="course" id="backend-course">
+                <p class="course__title">BackEnd разработчик</p>
+                <p class="course__step">Урок 18</p>
+            </div>
+            <div class="course" id="js-course">
+                <p class="course__title">Основы JavaScript</p>
+                <p class="course__step">Урок 4</p>
+            </div>
+            <div class="course" id="empty-course">
+                <a class="more-courses" href="#">
+                    <img src="img/icons/UI/arrow-right-1.svg" alt="">
+                </a>
+            </div>
+        </div>
     </div>
+
+    <div class="block">
+        <p class="title">Ближайшие события</p>
+        <div class="events-section">
+            <div class="event" id="lection">
+                <p class="event__date">12 марта, 18:00</p>
+                <p class="event__theme title">"Объекты в JavaScript"</p>
+                <p class="event__name text">Лекция</p>
+            </div>
+            <div class="event" id="practice">
+                <p class="event__date">12 марта, 20:00</p>
+                <p class="event__theme title">"Вёрстка лендинг страницы"</p>
+                <p class="event__name text">Практика</p>
+            </div>
+            <div class="event" id="practice">
+                <p class="event__date">13 марта, 14:00</p>
+                <p class="event__theme title">"Знакомоство с препроцессором SCSS"</p>
+                <p class="event__name text">Практика</p>
+            </div>
+        </div>
+    </div>
+
 </div>
 <script src="js/index.js"></script>
 <div class="footer">
