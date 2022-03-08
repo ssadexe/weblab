@@ -56,14 +56,14 @@
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
-  padding: 1rem 2rem;
-  border-left: 4px solid #000;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
 }
 .event#lection {
-  border-color: #fffb00;
+  background-color: #fffec5;
 }
 .event#practice {
-  border-color: #ff7b00;
+  background-color: #ffe7ce;
 }
 
 .event__date {
@@ -72,6 +72,8 @@
 
 .event__theme {
   margin-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .event__name {
@@ -163,8 +165,8 @@ img.svg {
 .profile-name {
   display: flex;
   align-items: center;
-  padding-left: 2rem;
-  font-size: 3rem;
+  padding: 0 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -176,7 +178,6 @@ img.svg {
   border-radius: 100%;
   border: 1px solid #e0e0e0;
   transition: 0.3s ease-out;
-  background-color: #f2f9ff;
 }
 
 .sidebar-btn-animation {
